@@ -1,0 +1,17 @@
+#iena-modal-content {
+    width: 75em;
+    height: 65em;
+}
+
+#iena-modal-body {
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.modal-header .close {
+    font-size: 50px;
+}
+
+.none_hidden {
+    display: none
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/competency_iena/db" VERSION="20180212" COMMENT="XMLDB file for Moodle blocks/competency_iena"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="block_competency_iena" COMMENT="Table du block competency_iena">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="course" TYPE="int" LENGTH="8" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="name" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="ressources" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="image" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_competency_iena_com" COMMENT="Table du block competency_iena">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="idsender" TYPE="int" LENGTH="8" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="idstudent" TYPE="int" LENGTH="8" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="idcourse" TYPE="int" LENGTH="8" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="idcompetency" TYPE="int" LENGTH="8" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="message" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="date" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>
